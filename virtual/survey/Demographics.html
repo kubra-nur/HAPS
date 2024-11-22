@@ -1,6 +1,5 @@
 {{ block title }}Survey{{ endblock }}
 {{ block content }}
-{% block content %}
 
 
 <style>
@@ -12,12 +11,12 @@
 </style>
 
 <div class="my-box">
-
+ {{ formfields }}
 </div>
 
 <br/>
 
 <p>{{ next_button }}</p>
 
-{% endblock %}
+{{ endblock }}
 

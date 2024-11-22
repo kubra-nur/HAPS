@@ -1,0 +1,25 @@
+{% block title %} Experiment Introduction {% endblock %}
+
+{% block content %}
+
+
+<style>
+    .my-box {
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+</style>
+
+<div class="my-box">
+    <p>You will now answer a series of questions.</p>
+<p>It will take approximately <strong>12–18 minutes</strong> to complete.</p>
+<p>Please ensure that you are in a room with a <strong>stable internet connection.</strong></p>
+</div>
+
+<br/>
+
+<p>{{ next_button }}</p>
+
+{% endblock %}
+

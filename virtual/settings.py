@@ -5,7 +5,7 @@ SESSION_CONFIGS = [
     dict(
         name='slider',
         display_name='Part A',
-        app_sequence=['intro', 'pvq', 'svo','timeslots','survey',],
+        app_sequence=['intro', 'pvq', 'svo','survey',],
         num_demo_participants=1,
         ret_slider_num=90,
         ret_slider_ncols=1,

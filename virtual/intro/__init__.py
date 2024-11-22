@@ -28,6 +28,10 @@ class Player(BasePlayer):
 class MyPage(Page):
     pass
 
+class MyPage2(Page):
+    pass
+
+
 
 class ResultsWaitPage(WaitPage):
     pass
@@ -37,4 +41,4 @@ class Results(Page):
     pass
 
 
-page_sequence = [MyPage]
+page_sequence = [MyPage2]
