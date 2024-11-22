@@ -1,0 +1,65 @@
+
+{{ block title }}
+SVO Questionnaire
+{{ endblock }}
+
+{% block content %}
+
+
+<style>
+    .my-box {
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+</style>
+
+<div class="my-box">
+    <p>
+ In this task you will be afterwards randomly paired with another person of the KD2 Pool,
+    who is also participating in this study, and whom we will refer to as the <b>other</b>.
+    This other person is someone you do not know and will remain mutually anonymous.
+      <p>
+        All of your choices are completely confidential.
+    </p>
+    <p>
+    You will be making a series of decisions about allocating resources between you and this other person.
+    For each of the following questions, please indicate the distribution you prefer most by marking the respective position along the <b>midline</b>.
+    You can only make one mark for each question.
+</p>
+    <br>
+    Your decisions will yield money for both yourself and the other person.
+    In the example below, a person has chosen to distribute money so that he/she receives <b>€0.50,</b>
+    while the anonymous other person receives <b>€0.40.</b>
+    <br/><br/>
+    <img src="{{ static 'images/scale.png' }}" width="90%" />
+
+ <br>
+    <p>
+
+</p>
+    <p>
+   There are no right or wrong answers, this is all about personal preferences.
+    </p>
+     <p>
+    After you have made your decision, move the slider in that direction.
+    As you can see, your choices will influence both the amount of money you receive as well as the amount of money the other receives.
+  </p>
+         <br>
+
+     <br>
+    For the final payout in this part, we will average all the answers you and the others provide,
+    and then take the sum thereof.
+    For example, if you allocate on average €0.60 to yourself and €0.30 to the other person,
+    and the other person allocates on average €0.50 to themselves and €0.50 to you,
+    taken together, you will earn an additional payout of €1.10,
+    and the other person will earn an additional payout of €0.80.
+ <br>
+</div>
+
+<br/>
+
+<p>{{ next_button }}</p>
+
+{% endblock %}
+
