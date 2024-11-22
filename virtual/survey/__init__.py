@@ -70,13 +70,9 @@ class Player(BasePlayer):
         label='Please indicate your frequency of usage of video meetings in an average week',
         widget=widgets.RadioSelect
     )
-
-
-
-    availability_to_participate = models.LongStringField(
-        label='Please write down your available timeslots slots to participate in the lab study (e.g., Monday Morning, Tuesday Afternoon, etc.). Please indicate at least two slots.'
+    feedback = models.LongStringField(
+        label='If you have any other comments or feedback about the experiment, please let us know here:'
     )
-
 
 # FUNCTIONS
 # PAGES
@@ -85,7 +81,7 @@ class Player(BasePlayer):
 class Demographics(Page):
     form_model = 'player'
     form_fields = [ 'age', 'gender', 'field_of_study',
-                   'prior_experience', 'frequency_of_usage']
+                   'prior_experience', 'frequency_of_usage', 'feedback']
 
     def error_message(self, values):
         # Custom validation for age field
